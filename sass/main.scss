@@ -13,18 +13,21 @@ h1{
   font-size: 64px;
   line-height: 64px;
   font-weight: 900;
+  color: #28283D;
 }
 
 h2 {
   font-size: 40px;
   line-height: 44px;
   font-weight: 900;
+  color: #28283D;
 }
 
 p{
   font-size: 18px;
   line-height: 26px;
   font-weight: 500;
+  color: #87879D;
 }
 
 .overline {
@@ -34,16 +37,72 @@ p{
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #4D96A9;
+  margin-bottom: 16px;
+}
+
+.button {
+  padding: 16px 40px;
+  border-radius: 29px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFF;
+  border: none;
+  outline: none;
+  background-color: #855FB1;
+  cursor: pointer;
+  span {
+    color: #D9B8FF;
+  }
+  &.download.alt {
+    background-color: #4D96A9;
+    margin-right: 16px;
+    span {
+      color: #8FE3F9;
+    }
+  }
+}
+
+.transition-number{
+  display: flex;
+  width: 56px;
+  height: 56px;
+  color: #87879D;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  background-color: #FAFAFA;
+  border-radius: 50%;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 900;
+  margin: auto;
+  span {
+    margin: auto;
+  }
+  &::before{
+    content: "";
+    width: 1px;
+    height: 84px;
+    background-color: rgba(135, 135, 157, 0.25);
+    position: relative;
+    left: 50%;
+    bottom: 157%;
+  }
+  &:nth-of-type(2) {
+    position: relative;
+    bottom: -28px;
+  }
 }
 
 header {
-  margin: 80px 0 110px;
+  margin: 80px 0 194px;
+  overflow: hidden;
   #logo{
     display: block;
     margin: 0 auto 61px;
   }
   .hero-banner {
     display: flex;
+    justify-content: space-between;
     &__img {
       position: relative;
       object-fit: contain;
@@ -62,27 +121,43 @@ header {
       p {
         margin-bottom: 32px;
       }
-      .button {
-        padding: 16px 40px;
-        border-radius: 29px;
-        font-weight: 900;
-        font-size: 16px;
-        line-height: 26px;
-        color: #fff;
-        border: none;
-        outline: none;
-        background-color: #855FB1;
-        cursor: pointer;
-        span {
-          color: #8FE3F9;
-        }
-        &.download {
-          background-color: #4D96A9;
-          margin-right: 16px;
-        }
-      }
     }
   }
 }
 
-
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 156px;
+  &__img {
+    display: flex;
+    justify-content: space-between;
+    height: 242px;
+    width: 1110px;
+    margin: 64px 0 80px;
+    img {
+      border-radius: 8px;
+      height: 100%;
+    }
+  }
+  &__text {
+    width: 37.5%;
+    text-align: center;
+    h2 {
+      margin-bottom: 32px;
+    }
+  }
+}
+footer {
+  background: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.9)), url("../../assets/desktop/image-footer.jpg") center / cover;
+  display: flex;
+  height: 308px;
+  padding: 0 165px;
+  align-items: center;
+  justify-content: space-between;
+  h2, p{
+    color: #FAFAFA;
+    width: 350px;
+  }
+}
