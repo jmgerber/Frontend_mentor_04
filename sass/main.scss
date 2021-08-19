@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+h1{
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 900;
+}
+
+p{
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.overline {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #4D96A9;
+}
+
+header {
+  margin: 80px 0 110px;
+  #logo{
+    display: block;
+    margin: 0 auto 61px;
+  }
+  .hero-banner {
+    display: flex;
+    &__img {
+      position: relative;
+      object-fit: contain;
+      &.left {
+        left: -32px;
+      }
+      &.right {
+        right: -32px;
+      }
+    }
+    &__text {
+      text-align: center;
+      h1 {
+        margin-bottom: 34px;
+      }
+      p {
+        margin-bottom: 32px;
+      }
+      .button {
+        padding: 16px 40px;
+        border-radius: 29px;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 26px;
+        color: #fff;
+        border: none;
+        outline: none;
+        background-color: #855FB1;
+        cursor: pointer;
+        span {
+          color: #8FE3F9;
+        }
+        &.download {
+          background-color: #4D96A9;
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}
+
+
